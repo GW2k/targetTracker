@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #222222;
+  background: #242424;
   color: #fff;
   flex-direction: column;
 }
@@ -26,15 +26,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  flex-direction: column;
 }
 
 .dartboard {
   position: relative;
-  width: 300px; /* Width of the dartboard */
-  height: 300px; /* Height of the dartboard */
+  width: 300px; 
+  height: 300px;
   border-radius: 50%;
-  background: #000; /* Dark background for the dartboard */
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ body {
 
 .ring-value {
   position: absolute;
-  left: 4%; /* Position the value on the leftmost side of the ring */
+  left: 4%;
   font-size: 18px;
   color: black;
   font-weight: bold;
@@ -86,6 +86,26 @@ body {
   height: 20%;
 }
 
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hit-count {
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .scoreboard {
   text-align: left;
   max-width: 200px;
@@ -104,4 +124,22 @@ body {
 #score {
   font-size: 24px;
   margin-top: 20px;
+}
+
+.container {
+  flex-direction: row;
+}
+
+.game, .scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+#miss-btn {
+  margin-top: 10px;
 }
