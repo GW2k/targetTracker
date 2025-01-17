@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Dartboard Game</title>
+  <title>Target Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,13 +26,18 @@
           <span class="ring-value">5</span>
         </div>
       </div>
-      <div class="scoreboard">
-        <h1>Shot History</h1>
-        <ul id="score-list">
-          <!-- Hit scores will be displayed here -->
-        </ul>
-        <p id="total-score">Total Score: 0</p>
+      <div class="controls">
+        <label for="hit-count">Choose Hits:</label>
+        <input type="number" id="hit-count" value="10" min="1" max="20">
+        <button id="start-btn" onclick="startGame()">Start</button>
+        <button id="miss-btn" onclick="missHit()">Miss</button>
       </div>
+    </div>
+    <div class="scoreboard">
+      <h1>Shot History</h1>
+      <ul id="score-list">
+      </ul>
+      <p id="total-score">Total Score: 0</p>
     </div>
     <p id="score">Hits: 0/10</p>
   </div>
