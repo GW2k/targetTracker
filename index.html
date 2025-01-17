@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Dartboard Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game">
+      <div class="dartboard" onclick="hitTarget(event)">
+        <div class="ring ring-1">
+          <span class="ring-value">1</span>
+        </div>
+        <div class="ring ring-2">
+          <span class="ring-value">2</span>
+        </div>
+        <div class="ring ring-3">
+          <span class="ring-value">3</span>
+        </div>
+        <div class="ring ring-4">
+          <span class="ring-value">4</span>
+        </div>
+        <div class="ring ring-5">
+          <span class="ring-value">5</span>
+        </div>
+      </div>
+      <div class="scoreboard">
+        <h1>Shot History</h1>
+        <ul id="score-list">
+          <!-- Hit scores will be displayed here -->
+        </ul>
+        <p id="total-score">Total Score: 0</p>
+      </div>
+    </div>
+    <p id="score">Hits: 0/10</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

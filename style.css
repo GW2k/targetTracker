@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222222;
+  color: #fff;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.dartboard {
+  position: relative;
+  width: 300px; /* Width of the dartboard */
+  height: 300px; /* Height of the dartboard */
+  border-radius: 50%;
+  background: #000; /* Dark background for the dartboard */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white; /* All rings are white */
+  border: 3px solid black; /* Black borders around the rings */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring-value {
+  position: absolute;
+  left: 4%; /* Position the value on the leftmost side of the ring */
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.ring-1 {
+  width: 100%; /* Largest ring */
+  height: 100%;
+}
+
+.ring-2 {
+  width: 80%;
+  height: 80%;
+}
+
+.ring-3 {
+  width: 60%;
+  height: 60%;
+}
+
+.ring-4 {
+  width: 40%;
+  height: 40%;
+}
+
+.ring-5 {
+  width: 20%;
+  height: 20%;
+}
+
+.scoreboard {
+  text-align: left;
+  max-width: 200px;
+}
+
+#score-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#score-list li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#score {
+  font-size: 24px;
+  margin-top: 20px;
+}
